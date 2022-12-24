@@ -168,4 +168,49 @@ h1 {
   color: #000000;
 }
 
+.about {
+  width: 100%;
+  height: 666px;
+  background-color: #FFFFFF;
+  display: flex;
+  align-items: center;
+}
+
+.about_container {
+  width: 1222px;
+  height: 479px;
+  display: flex;
+}
+
+.about_info {
+  width: 758px;
+}
+
+.text_block {
+  width: 605px;
+  height: 370px;
+  margin-top: 67px;
+}
+
+.h2_green {
+  width: 600px;
+  font-family: 'Inika';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 52px;
+  color: #499A18;
+  margin-bottom: 38px;
+}
+
+.orange_word {
+  color: #E06733;
+}
+
+.houseplant_1 {
+  width: 464px;
+  background: url(./assets/images/houseplant_1.png) no-repeat;
+  background-position: -1px -2px;
+}
+
 /* Main styles end */
