@@ -6,11 +6,13 @@ body {
   line-height: 30px;
   color: #636060;
   background-color: #EDF2EC;
+  overflow-x: hidden;
 }
 
 .wrapper {
   max-width: 1222px;
   margin: 0 auto;
+padding: 0 20px 0;
 }
 
 /* Header styles start */
@@ -153,10 +155,8 @@ h1 {
   border: 2px solid #E06733;
   width: 158px;
   height: 44px;
-  text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 16px;
   border-radius: 10px;
   margin-top: 27px;
 }
@@ -211,6 +211,113 @@ h1 {
   width: 464px;
   background: url(./assets/images/houseplant_1.png) no-repeat;
   background-position: -1px -2px;
+}
+
+.service {
+  width: 100%;
+  height: 1300px;
+  display: flex;
+}
+
+.service_container {
+  width: 1222px;
+  height: 1179px;
+  display: flex;
+  flex-direction: column;
+}
+
+.service_buttons {
+  width: 1007px;
+  height: 108px;
+  margin-top: 40px;
+  display: flex;
+}
+
+.h2_service {
+  width: 350px;
+  font-family: 'Inika';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 52px;
+  color: #499A18;
+  margin: -1px 60px 0 -1px;
+}
+
+.button_service {
+  border: 1px solid #E06733;
+  border-radius: 5px;
+  width: 161px;
+  height: 50px;
+  margin: 28px 0 0 38px;
+}
+
+.button_text2 {
+  font-family: 'Inika';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 26px;
+  color: #E06733;
+  margin: auto;
+}
+
+.service_content {
+  margin-top: 76px;
+  width: 1222px;
+  height: 955px;
+  display: grid;
+  grid-template-columns: 330px 330px 330px;
+  grid-template-rows: 450px 450px;
+  grid-column-gap: 116px;
+  grid-row-gap: 55px;
+}
+
+.service_item {
+  width: 330px;
+  height: 450px;
+  display: flex;
+  flex-direction: column;
+}
+
+.service_image {
+  height: 350px;
+}
+
+.image_item {
+  border-radius: 22px 22px 0px 0px;
+  object-position: center;
+  margin: -1px 0 0 -1px;
+}
+
+.service_text {
+  width: 328px;
+  height: 100px;
+  border: 1px solid #E3E1D5;
+  border-radius: 0px 0px 22px 22px;
+  margin: -1px 0 0 -1px;
+}
+
+h5 {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 20px;
+  color: #E06733;
+  text-align: center;
+  margin: 9px 0 0;
+}
+
+.text_item {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #717171;
+  text-align: center;
+  margin-top: 14px;
 }
 
 /* Main styles end */
