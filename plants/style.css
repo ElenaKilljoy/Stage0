@@ -324,4 +324,121 @@ h5 {
   margin-top: 14px;
 }
 
+.prices {
+  width: 100%;
+  height: 560px;
+  background-color: #FFFFFF;
+  display: flex;
+}
+
+.prices_container {
+  width: 1222px;
+  height: 405px;
+  display: flex;
+  margin-top: 40px;
+}
+
+.left_content {
+  width: 331px;
+  height: 388px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.right_content {
+  width: 891px;
+  height: 405px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.select_items {
+  width: 330px;
+  height: 284px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  border: 1px solid #E3E1D5;
+  border-radius: 20px;
+  margin-left: -1px;
+}
+
+.price {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 48px;
+  color: #000000;
+  margin: -2px 0 60px 0;
+}
+
+.select {
+  width: 250px;
+  height: 50px;
+  background: #EDF2EC;
+  border-radius: 20px;
+  margin-top: 33px;
+  display: flex;
+  align-items: center;
+}
+
+.select_option {
+  width: 90px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 20px;
+  color: #000000;
+  margin-left: 40px;
+}
+
+.accordion_btn {
+  margin-left: 63px;
+}
+
+h3 {
+  width: 500px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 50px;
+  text-align: right;
+  color: #000000;
+  margin: -2px 3px 0 0;
+}
+
+.button_price {
+  width: 162px;
+  height: 50px;
+  border: 1px solid #E06733;
+  border-radius: 5px;
+  margin: 39px 2px 0 0;
+  background-color: #FFFFFF;
+}
+
+.button_text3 {
+  font-family: 'Inika';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 26px;
+  text-align: center;
+  color: #E06733;
+  margin: auto;
+}
+
+.leaves_small {
+  width: 891px;
+  height: 175px;
+  background: url(./assets/images/leaves_small.png) no-repeat;
+  background-position: right -8px bottom -4px;
+  margin-top: 42px;
+}
+
 /* Main styles end */
