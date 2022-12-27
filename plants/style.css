@@ -25,7 +25,6 @@ body {
 }
 
 /* Header styles start */
-
 .header {
   width: 100%;
   height: 134px;
@@ -105,13 +104,11 @@ body {
   -webkit-text-fill-color: transparent;
   background-clip: text;
 }
-
 /* Header styles end */
 
 /* Main styles start */
 
 /* Welcome styles start */
-
 .welcome {
   width: 100%;
   height: 532px;
@@ -187,11 +184,9 @@ h1 {
   margin: auto;
   color: #000000;
 }
-
 /* Welcome styles end */
 
 /* About styles start */
-
 .about {
   width: 100%;
   height: 666px;
@@ -235,11 +230,9 @@ h1 {
   background: url(./assets/images/houseplant_1.png) no-repeat;
   background-position: -1px -2px;
 }
-
 /* About styles end */
 
 /* Service styles start */
-
 .service {
   width: 100%;
   height: 1300px;
@@ -347,11 +340,9 @@ h5 {
   text-align: center;
   margin-top: 14px;
 }
-
 /* Service styles end */
 
 /* Prices styles start */
-
 .prices {
   width: 100%;
   height: 560px;
@@ -467,11 +458,9 @@ h3 {
   background-position: right -8px bottom -4px;
   margin-top: 42px;
 }
-
 /* Prices styles end */
 
 /* Contacts styles start */
-
 .contacts {
   width: 100%;
   height: 550px;
@@ -528,13 +517,61 @@ h3 {
 .accordion_btn2 {
   margin-left: 337px;
 }
-
 /* Contacts styles end */
 
+/* Main styles end */
+
 /* Footer styles start */
+.footer {
+  width: 100%;
+  height: 130px;
+  display: flex;
+  align-items: center;
+}
 
+.footer_container {
+  width: 1222px;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+}
 
+.footer_data {
+  width: 182px;
+  display: flex;
+  align-items: center;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 50px;
+  color: #000000;
+}
 
+.year {
+  margin: 0 20px 0 20px;
+}
+
+.rs_school {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  color: #000000;
+  text-align: center;
+  margin: 9px 0 0 3px;
+}
+
+.social_list {
+  width: 188px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.social_icon {
+  width: 32px;
+  height: 32px;
+}
 /* Footer styles end */
 
-/* Main styles end */
