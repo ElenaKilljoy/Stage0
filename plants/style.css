@@ -16,7 +16,7 @@ body {
 .wrapper {
   max-width: 1222px;
   margin: 0 auto;
-padding: 0 20px 0;
+  padding: 0 20px 0;
 }
 
 /* Header styles start */
@@ -91,6 +91,13 @@ padding: 0 20px 0;
   line-height: 50px;
   color: #010201;
   text-decoration: none;
+}
+
+.menu_item:hover {
+  background: #E06733;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 
 /* Header styles end */
