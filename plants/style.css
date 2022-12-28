@@ -32,6 +32,11 @@ button:hover {
   background: #E06733;
 }
 
+a {
+  text-decoration: none;
+  color: #000000;
+}
+
 /* Header styles start */
 .header {
   width: 100%;
