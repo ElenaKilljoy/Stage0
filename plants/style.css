@@ -52,16 +52,19 @@ body {
   display: flex;
   justify-content: flex-start;
   margin-left: 1px;
+  margin-top: 1px;
 }
 
 .logo_icon {
-  width: 21px;
+  width: 22px;
   height: 23px;
-  margin-top: 8px;
+  margin-top: 7px;
 }
 
 .logo_plants {
   font-family: 'Inika';
+  font-style: normal;
+  font-weight: 400;
   font-size: 16px;
   line-height: 15px;
   color: #000000;
@@ -77,6 +80,7 @@ body {
   width: 452px;
   height: 50px;
   margin-right: 1px;
+  margin-top: 1px;
 }
 
 .menu_list {
@@ -111,7 +115,7 @@ body {
 /* Welcome styles start */
 .welcome {
   width: 100%;
-  height: 532px;
+  height: 531px;
   display: flex;
   align-items: center;
   background-color: #EDF2EC;
@@ -128,7 +132,7 @@ body {
 .leaves_image {
   width: 470px;
   background: url(./assets/images/leaves.png) no-repeat;
-  background-position: -10px -10px;
+  background-position: -9px -9px;
   background-size: auto;
 }
 
@@ -156,7 +160,7 @@ h1 {
   font-size: 45px;
   line-height: 50px;
   color: #717171;
-  margin: 0;
+  margin: 0 0 0 1px;
 }
 
 .green_word {
@@ -165,7 +169,8 @@ h1 {
 
 .section_text {
   line-height: 35px;
-  margin-top: 43px;
+  margin-top: 44px;
+  margin-left: 2px;
 }
 
 .button {
@@ -176,9 +181,13 @@ h1 {
   display: inline-block;
   border-radius: 10px;
   margin-top: 27px;
+  margin-left: 1px;
 }
 
 .button_text {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
   font-size: 16px;
   line-height: 20px;
   margin: auto;
@@ -189,7 +198,7 @@ h1 {
 /* About styles start */
 .about {
   width: 100%;
-  height: 666px;
+  height: 667px;
   display: flex;
   align-items: center;
 }
@@ -207,7 +216,7 @@ h1 {
 .text_block {
   width: 605px;
   height: 370px;
-  margin-top: 67px;
+  margin-top: 68px;
 }
 
 .h2_green {
@@ -228,7 +237,6 @@ h1 {
 .houseplant_1 {
   width: 464px;
   background: url(./assets/images/houseplant_1.png) no-repeat;
-  background-position: -1px -2px;
 }
 /* About styles end */
 
@@ -262,7 +270,7 @@ h1 {
   font-size: 40px;
   line-height: 52px;
   color: #499A18;
-  margin: -1px 60px 0 -1px;
+  margin: 0 60px 0 0;
 }
 
 .button_service {
@@ -270,7 +278,7 @@ h1 {
   border-radius: 5px;
   width: 161px;
   height: 50px;
-  margin: 28px 0 0 38px;
+  margin: 29px 0 0 38px;
 }
 
 .button_text2 {
@@ -280,7 +288,7 @@ h1 {
   font-size: 20px;
   line-height: 26px;
   color: #E06733;
-  margin: auto;
+  margin: auto 2px auto auto;
 }
 
 .service_content {
@@ -306,17 +314,17 @@ h1 {
 }
 
 .image_item {
-  border-radius: 22px 22px 0px 0px;
+  border-radius: 21px 21px 0px 0px;
   object-position: center;
-  margin: -1px 0 0 -1px;
+  margin: 0;
 }
 
 .service_text {
   width: 328px;
   height: 100px;
   border: 1px solid #E3E1D5;
-  border-radius: 0px 0px 22px 22px;
-  margin: -1px 0 0 -1px;
+  border-radius: 0px 0px 21px 21px;
+  margin: 0;
 }
 
 h5 {
@@ -327,7 +335,7 @@ h5 {
   line-height: 20px;
   color: #E06733;
   text-align: center;
-  margin: 9px 0 0;
+  margin: 9px 0 0 1px;
 }
 
 .text_item {
@@ -339,13 +347,15 @@ h5 {
   color: #717171;
   text-align: center;
   margin-top: 14px;
+  margin-left: -2px;
+  letter-spacing: 0.01em;
 }
 /* Service styles end */
 
 /* Prices styles start */
 .prices {
   width: 100%;
-  height: 560px;
+  height: 558px;
   display: flex;
 }
 
@@ -358,7 +368,7 @@ h5 {
 
 .left_content {
   width: 331px;
-  height: 388px;
+  height: 389px;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -381,7 +391,7 @@ h5 {
   align-items: center;
   border: 1px solid #E3E1D5;
   border-radius: 20px;
-  margin-left: -1px;
+  margin-top: 0;
 }
 
 .price {
@@ -391,7 +401,7 @@ h5 {
   font-size: 40px;
   line-height: 48px;
   color: #000000;
-  margin: -2px 0 60px 0;
+  margin: -1px 0 61px 0;
 }
 
 .select {
@@ -399,7 +409,7 @@ h5 {
   height: 50px;
   background: #EDF2EC;
   border-radius: 20px;
-  margin-top: 33px;
+  margin-top: 32px;
   display: flex;
   align-items: center;
 }
@@ -428,7 +438,7 @@ h3 {
   line-height: 50px;
   text-align: right;
   color: #000000;
-  margin: -2px 3px 0 0;
+  margin: -1px -1px 0 0;
 }
 
 .button_price {
@@ -436,7 +446,7 @@ h3 {
   height: 50px;
   border: 1px solid #E06733;
   border-radius: 5px;
-  margin: 39px 2px 0 0;
+  margin: 40px 0 0 0;
   background-color: #FFFFFF;
 }
 
@@ -455,7 +465,7 @@ h3 {
   width: 891px;
   height: 175px;
   background: url(./assets/images/leaves_small.png) no-repeat;
-  background-position: right -8px bottom -4px;
+  background-position: right -9px bottom -5px;
   margin-top: 42px;
 }
 /* Prices styles end */
@@ -478,7 +488,7 @@ h3 {
 .contact_woman {
   width: 400px;
   background: url(./assets/images/contact_woman.png) no-repeat;
-  background-position: left -1px top -3px;
+  background-position: left 0 top 0;
 }
 
 .contact_us {
@@ -489,7 +499,7 @@ h3 {
   font-size: 40px;
   line-height: 52px;
   color: #499A18;
-  margin: 4px 0 0 112px;
+  margin: 7px 0 0 113px;
 }
 
 .contact_form {
@@ -498,7 +508,7 @@ h3 {
   background: #D6E7D2;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 0px;
-  margin: 92px 0 0 58px;
+  margin: 95px 0 0 60px;
   display: flex;
   align-items: center;
 }
@@ -549,7 +559,7 @@ h3 {
 }
 
 .year {
-  margin: 0 20px 0 20px;
+  margin: 0 22px 0 21px;
 }
 
 .rs_school {
@@ -559,7 +569,7 @@ h3 {
   font-size: 20px;
   color: #000000;
   text-align: center;
-  margin: 8px 0 0 43px;
+  margin: 10px 0 0 44px;
 }
 
 .social_list {
