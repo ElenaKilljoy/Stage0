@@ -24,6 +24,14 @@ body {
   padding: 0 20px 0;
 }
 
+button {
+  cursor: pointer;
+}
+
+button:hover {
+  background: #E06733;
+}
+
 /* Header styles start */
 .header {
   width: 100%;
@@ -189,9 +197,13 @@ h1 {
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
-  line-height: 20px;
+  line-height: 40px;
   margin: auto;
   color: #000000;
+}
+
+.button_text:hover {
+color: #FFFFFF;
 }
 /* Welcome styles end */
 
@@ -286,9 +298,13 @@ h1 {
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
-  line-height: 26px;
+  line-height: 45px;
   color: #E06733;
   margin: auto 2px auto auto;
+}
+
+.button_text2:hover {
+  color: #FFFFFF;
 }
 
 .service_content {
@@ -412,6 +428,11 @@ h5 {
   margin-top: 32px;
   display: flex;
   align-items: center;
+  cursor: pointer;
+}
+
+.select:hover {
+  background: #D6E7D2;
 }
 
 .select_option {
@@ -455,10 +476,14 @@ h3 {
   font-style: normal;
   font-weight: 700;
   font-size: 20px;
-  line-height: 26px;
+  line-height: 42px;
   text-align: center;
   color: #E06733;
   margin: auto;
+}
+
+.button_text3:hover {
+  color: #FFFFFF;
 }
 
 .leaves_small {
@@ -511,6 +536,11 @@ h3 {
   margin: 95px 0 0 60px;
   display: flex;
   align-items: center;
+  cursor: pointer;
+}
+
+.contact_form:hover {
+  background: #C1E698;
 }
 
 .city {
@@ -583,6 +613,7 @@ h3 {
 .social_icon {
   width: 32px;
   height: 32px;
+  cursor: pointer;
 }
 /* Footer styles end */
 
