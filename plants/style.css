@@ -168,13 +168,13 @@ a {
 }
 
 h1 {
+  margin: 0 0 0 1px;
   font-family: 'Inter';
   font-style: normal;
   font-weight: 700;
   font-size: 45px;
   line-height: 50px;
   color: #717171;
-  margin: 0 0 0 1px;
 }
 
 .green_word {
@@ -182,20 +182,20 @@ h1 {
 }
 
 .section_text {
-  line-height: 35px;
   margin-top: 44px;
   margin-left: 2px;
+  line-height: 35px;
 }
 
 .button {
-  border: 2px solid #E06733;
   width: 158px;
   height: 44px;
+  margin-top: 27px;
+  margin-left: 1px;
   text-decoration: none;
   display: inline-block;
   border-radius: 10px;
-  margin-top: 27px;
-  margin-left: 1px;
+  border: 2px solid #E06733;
   font-family: 'Inter';
   font-style: normal;
   font-weight: 400;
@@ -231,13 +231,13 @@ h1 {
 
 .h2_green {
   width: 600px;
+  margin-bottom: 38px;
   font-family: 'Inika';
   font-style: normal;
   font-weight: 400;
   font-size: 40px;
   line-height: 52px;
   color: #499A18;
-  margin-bottom: 38px;
 }
 
 .orange_word {
@@ -274,21 +274,21 @@ h1 {
 
 .h2_service {
   width: 350px;
+  margin: 0 60px 0 0;
   font-family: 'Inika';
   font-style: normal;
   font-weight: 400;
   font-size: 40px;
   line-height: 52px;
   color: #499A18;
-  margin: 0 60px 0 0;
 }
 
 .button_service {
-  border: 1px solid #E06733;
-  border-radius: 5px;
   width: 161px;
   height: 50px;
   margin: 29px 0 0 38px;
+  border: 1px solid #E06733;
+  border-radius: 5px;
   font-family: 'Inika';
   font-style: normal;
   font-weight: 400;
@@ -320,41 +320,41 @@ h1 {
 }
 
 .image_item {
-  border-radius: 21px 21px 0px 0px;
   object-position: center;
   margin: 0;
+  border-radius: 21px 21px 0px 0px;
 }
 
 .service_text {
   width: 328px;
   height: 100px;
+  margin: 0;
   border: 1px solid #E3E1D5;
   border-radius: 0px 0px 21px 21px;
-  margin: 0;
 }
 
 h5 {
+  margin: 9px 0 0 1px;
+  text-align: center;
   font-family: 'Inter';
   font-style: normal;
   font-weight: 700;
   font-size: 20px;
   line-height: 20px;
   color: #E06733;
-  text-align: center;
-  margin: 9px 0 0 1px;
 }
 
 .text_item {
+  margin-top: 14px;
+  margin-left: -2px;
+  text-align: center;
   font-family: 'Inter';
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
-  color: #717171;
-  text-align: center;
-  margin-top: 14px;
-  margin-left: -2px;
   letter-spacing: 0.01em;
+  color: #717171;
 }
 /* Service styles end */
 
@@ -391,34 +391,34 @@ h5 {
 .select_items {
   width: 330px;
   height: 284px;
+  margin-top: 0;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
   border: 1px solid #E3E1D5;
   border-radius: 20px;
-  margin-top: 0;
 }
 
 .price {
+  margin: -1px 0 61px 0;
   font-family: 'Inter';
   font-style: normal;
   font-weight: 700;
   font-size: 40px;
   line-height: 48px;
   color: #000000;
-  margin: -1px 0 61px 0;
 }
 
 .select {
   width: 250px;
   height: 50px;
-  background: #EDF2EC;
-  border-radius: 20px;
   margin-top: 32px;
   display: flex;
   align-items: center;
   cursor: pointer;
+  border-radius: 20px;
+  background: #EDF2EC;
 }
 
 .select:hover {
@@ -427,13 +427,13 @@ h5 {
 
 .select_option {
   width: 90px;
+  margin-left: 40px;
   font-family: 'Inter';
   font-style: normal;
   font-weight: 700;
   font-size: 20px;
   line-height: 20px;
   color: #000000;
-  margin-left: 40px;
 }
 
 .accordion_btn {
@@ -442,6 +442,7 @@ h5 {
 
 h3 {
   width: 500px;
+  margin: -1px -1px 0 0;
   font-family: 'Inter';
   font-style: normal;
   font-weight: 700;
@@ -449,30 +450,29 @@ h3 {
   line-height: 50px;
   text-align: right;
   color: #000000;
-  margin: -1px -1px 0 0;
 }
 
 .button_price {
   width: 162px;
   height: 50px;
+  margin: 40px 0 0 0;
   border: 1px solid #E06733;
   border-radius: 5px;
-  margin: 40px 0 0 0;
-  background-color: #FFFFFF;
   font-family: 'Inika';
   font-style: normal;
   font-weight: 700;
   font-size: 20px;
   line-height: 26px;
+  background-color: #FFFFFF;
   color: #E06733;
 }
 
 .leaves_small {
   width: 891px;
   height: 175px;
+  margin-top: 42px;
   background: url(./assets/images/leaves_small.png) no-repeat;
   background-position: right -9px bottom -5px;
-  margin-top: 42px;
 }
 /* Prices styles end */
 
@@ -499,25 +499,25 @@ h3 {
 
 .contact_us {
   width: 200px;
+  margin: 7px 0 0 113px;
   font-family: 'Inika';
   font-style: normal;
   font-weight: 700;
   font-size: 40px;
   line-height: 52px;
   color: #499A18;
-  margin: 7px 0 0 113px;
 }
 
 .contact_form {
   width: 450px;
   height: 50px;
-  background: #D6E7D2;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  border-radius: 0px;
   margin: 95px 0 0 60px;
   display: flex;
   align-items: center;
   cursor: pointer;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 0px;
+  background: #D6E7D2;
 }
 
 .contact_form:hover {
@@ -525,6 +525,7 @@ h3 {
 }
 
 .city {
+  margin-left: 21px;
   font-family: 'Inter';
   font-style: normal;
   font-weight: 400;
@@ -532,7 +533,6 @@ h3 {
   line-height: 40px;
   letter-spacing: 0.05em;
   color: #717171;
-  margin-left: 21px;
 }
 
 .accordion_btn2 {
@@ -574,13 +574,13 @@ h3 {
 }
 
 .rs_school {
+  margin: 10px 0 0 44px;
   font-family: 'Inter';
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
   color: #000000;
   text-align: center;
-  margin: 10px 0 0 44px;
 }
 
 .social_list {
