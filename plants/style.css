@@ -38,6 +38,10 @@ a {
   color: #000000;
 }
 
+a:hover {
+  opacity: 0.8;
+}
+
 /* Header styles start */
 .header {
   width: 100%;
@@ -73,6 +77,12 @@ a {
   width: 22px;
   height: 23px;
   margin-top: 7px;
+}
+
+.logo_icon:hover {
+  -webkit-transform: rotateZ(-10deg);
+  -ms-transform: rotateZ(-10deg);
+  transform: rotateZ(-10deg);
 }
 
 .logo_plants {
@@ -121,6 +131,8 @@ a {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
+  opacity: 1;
+  font-weight: 700;
 }
 /* Header styles end */
 
