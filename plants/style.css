@@ -435,6 +435,7 @@ h5 {
 
 .select:hover {
   background: #D6E7D2;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
 }
 
 .select_option {
@@ -452,9 +453,14 @@ h5 {
   margin-left: 63px;
 }
 
+.accordion_btn:hover {
+  border-radius: 50%;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+}
+
 h3 {
   width: 500px;
-  margin: -1px -1px 0 0;
+  margin: -1px 2px 0 0;
   font-family: 'Inter';
   font-style: normal;
   font-weight: 700;
@@ -582,7 +588,7 @@ h3 {
 }
 
 .year {
-  margin: 0 22px 0 21px;
+  margin: 0 21px 0 21px;
 }
 
 .rs_school {
