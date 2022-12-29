@@ -30,6 +30,7 @@ button {
 
 button:hover {
   background: #E06733;
+  color: #FFFFFF;
 }
 
 a {
@@ -195,20 +196,12 @@ h1 {
   border-radius: 10px;
   margin-top: 27px;
   margin-left: 1px;
-}
-
-.button_text {
   font-family: 'Inter';
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
-  line-height: 40px;
-  margin: auto;
+  line-height: 20px;
   color: #000000;
-}
-
-.button_text:hover {
-color: #FFFFFF;
 }
 /* Welcome styles end */
 
@@ -296,20 +289,12 @@ color: #FFFFFF;
   width: 161px;
   height: 50px;
   margin: 29px 0 0 38px;
-}
-
-.button_text2 {
   font-family: 'Inika';
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
-  line-height: 45px;
+  line-height: 26px;
   color: #E06733;
-  margin: auto 2px auto auto;
-}
-
-.button_text2:hover {
-  color: #FFFFFF;
 }
 
 .service_content {
@@ -474,21 +459,12 @@ h3 {
   border-radius: 5px;
   margin: 40px 0 0 0;
   background-color: #FFFFFF;
-}
-
-.button_text3 {
   font-family: 'Inika';
   font-style: normal;
   font-weight: 700;
   font-size: 20px;
-  line-height: 42px;
-  text-align: center;
+  line-height: 26px;
   color: #E06733;
-  margin: auto;
-}
-
-.button_text3:hover {
-  color: #FFFFFF;
 }
 
 .leaves_small {
