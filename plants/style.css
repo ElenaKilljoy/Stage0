@@ -132,7 +132,7 @@ a:hover {
   -webkit-text-fill-color: transparent;
   background-clip: text;
   opacity: 1;
-  font-weight: 700;
+  text-shadow: 0 0 0.3px #E06733;
 }
 /* Header styles end */
 
