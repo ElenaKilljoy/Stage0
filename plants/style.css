@@ -295,6 +295,10 @@ h1 {
   color: #499A18;
 }
 
+.buttons {
+  display: flex;
+}
+
 .button_service {
   width: 161px;
   height: 50px;
