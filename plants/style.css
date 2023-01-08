@@ -108,6 +108,10 @@ a:hover {
   margin-top: 1px;
 }
 
+.burger {
+  display: none;
+}
+
 .menu_list {
   list-style-type: none;
   display: flex;
