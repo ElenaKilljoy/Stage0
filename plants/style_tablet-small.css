@@ -1,0 +1,333 @@
+@media only screen and (max-width: 700px) {
+  .wrapper {
+    max-width: 500px;
+  }
+
+  .header {
+    height: 96px;
+  }
+
+  .header_container {
+    height: 96px;
+  }
+
+  .navbar {
+    height: 24px;
+  }
+
+  .nav {
+    width: 40px;
+    height: 24px;
+    align-items: flex-end;
+  }
+
+  .nav_menu {
+    width: 40px;
+    height: 24px;
+  }
+
+  .logo {
+    height: 24px;
+  }
+
+  .logo_icon {
+    margin-top: -10px;
+    margin-left: -2px;
+  }
+
+  .logo_plants {
+    margin-top: 6px;
+  }
+
+  .menu_list {
+    flex-direction: column;
+    align-items: flex-end;
+  }
+  /* Welcome styles start */
+  .welcome {
+    height: 300px;
+    align-items: center;
+  }
+  
+  .welcome_container {
+    width: 330px;
+    height: 252px;
+    flex-direction: row;
+    margin-top: 4px;
+  }
+  
+  .leaves_image {
+    display: none;
+  }
+  
+  .welcome_info {
+    width: 330px;
+  }
+  
+  .welcome_text {
+    width: 330px;
+  }
+  
+  h1 {
+    font-size: 25px; 
+    line-height: 35px;
+  }
+  
+  .section_text {
+    margin-top: 20px;
+    margin-left: 0;
+    letter-spacing: 0.01em;
+  }
+  
+  .button {
+    width: 100px;
+    height: 34px;
+    margin-top: 10px;
+    font-size: 10px;
+  }
+  /* Welcome styles end */
+  /* About styles start */
+  .about {
+    height: 516px;
+  }
+
+  .about_container {
+    width: 330px;
+    height: 455px;
+  }
+
+  .about_info {
+    width: 330px;
+    height: 308px;
+  }
+
+  .text_block {
+    width: 330px;
+    height: 308px;
+    margin-top: -1px;
+  }
+
+  .h2_green {
+    width: 300px;
+    font-size: 25px;
+    line-height: 33px;
+  }
+
+  .about_text {
+    width: 328px;
+    margin-top: 13px;
+    margin-left: -1px;
+    font-size: 15px;
+    line-height: 25px;
+    letter-spacing: 0.01em;
+  }
+
+  .houseplant_1 {
+    width: 330px;
+    height: 147px;
+    margin-top: -1px;
+    background: url(./assets/images/houseplant_mobile.png) no-repeat;
+    background-position: center bottom;
+  }
+  /* About styles end */
+  /* Service styles start */
+  .service {
+    height: 3150px;
+    justify-content: center;
+  }
+
+  .service_container {
+    width: 330px;
+    height: 3150px;
+    align-items: center;
+  }
+
+  .service_buttons {
+    width: 330px;
+    margin-top: 30px;
+    align-items: flex-start;
+  }
+
+  .buttons {
+    height: 80px;
+    margin: 0;
+    flex-wrap: wrap;
+  }
+
+  .h2_service {
+    width: 200px;
+    margin-bottom: 29px;
+    font-size: 25px;
+    line-height: 33px;
+  }
+
+  .button_service {
+    width: 121px;
+    height: 35px;
+    margin: 9px 10px 0 0;
+    font-size: 15px;
+    line-height: 20px;
+  }
+
+  .service_content {
+    margin-top: 115px;
+    margin-left: 2px;
+    width: 280px;
+    height: 2870px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    grid-row-gap: 34px;
+  }
+
+  .service_text {
+    width: 276px;
+    height: 99px;
+  }
+  /* Service styles end */
+  /* Prices styles start */
+  .prices {
+    height: 512px;
+    justify-content: center;
+  }
+
+  .prices_container {
+    width: 330px;
+    height: 512px;
+    margin: 0;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .left_content {
+    width: 230px;
+    height: 346px;
+    justify-content: flex-start;
+    margin-top: 25px;
+  }
+
+  .right_content {
+    width: 230px;
+    height: 178px;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .select_items {
+    width: 224px;
+    height: 235px;
+    margin: 6px 0 0 3px;
+  }
+
+  .price {
+    margin: 0 0 30px 2px;
+    font-size: 25px;
+    line-height: 30px;
+    text-align: center;
+  }
+
+  .select {
+    margin-top: 0;
+    width: 180px;
+  }
+
+  .basics {
+    margin-top: 30px;
+  }
+
+  .standard {
+    margin: 13px 0 13px 0;
+  }
+
+  .select_option {
+    margin-left: 30px;
+    font-size: 15px;
+    line-height: 20px;
+  }
+
+  .accordion_btn {
+    margin-left: 5px;
+  }
+
+  h3 {
+    width: 230px;
+    margin: 0 0 0 3px;
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .button_price {
+    width: 121px;
+    height: 35px;
+    margin: 20px 0 0 0;
+    font-size: 15px;
+    line-height: 20px;
+  }
+
+  .leaves_small {
+    display: none;
+  }
+  /* Prices styles end */
+  /* Contacts styles start */
+  .contacts {
+    height: 445px;
+    justify-content: center;
+  }
+
+  .contacts_container {
+    width: 330px;
+    height: 445px;
+    justify-content: space-betwee;
+  }
+
+  .contact_woman {
+    width: 330px;
+    height: 125px;
+    background: url(./assets/images/contact_woman_mobile.png) no-repeat;
+    background-position: left 113px bottom 0;
+  }
+
+  .contact_us {
+    width: 330px;
+    margin: 25px 4px 0 0;
+    font-size: 25px;
+    line-height: 33px;
+  }
+
+  .contact_form {
+    width: 300px;
+    margin: 0 4px 50px 0;
+  }
+
+  .accordion_btn2 {
+    margin-left: 202px;
+  }
+  /* Contacts styles end */
+  /* Main styles end */
+  /* Footer styles start */
+  .footer {
+    height: 146px;
+  }
+
+  .footer_container {
+    width: 330px;
+    height: 146px;
+  }
+
+  .footer_data {
+    width: 330px;
+    height: 24px;
+    margin-top: 21px;
+  }
+
+  .rs_school {
+    width: 330px;
+    margin: 14px 1px 0 0;
+  }
+
+  .social_list {
+    margin-bottom: 15px;
+  }
+  /* Footer styles end */
+}
