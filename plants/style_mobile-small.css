@@ -1,0 +1,150 @@
+@media only screen and (max-width: 350px) {
+  .wrapper {
+    max-width: 300px;
+  }
+
+  /* Header styles start */
+  .header {
+    height: 70px;
+  }
+
+  .header_container {
+    height: 70px;
+  }
+
+  .navbar {
+    height: 24px;
+  }
+
+  .nav {
+    width: 40px;
+    height: 24px;
+    align-items: flex-end;
+  }
+
+  .nav_menu {
+    width: 40px;
+    height: 24px;
+  }
+
+  .logo {
+    height: 24px;
+  }
+
+  .logo_icon {
+    margin-top: -10px;
+    margin-left: -2px;
+  }
+
+  .logo_plants {
+    margin-top: 6px;
+  }
+
+  .burger {
+    width: 40px;
+    height: 26px;
+    margin-top: -2px;
+    margin-left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  #checkbox_menu:checked + label .burger_close{
+    margin-left: 0;
+  }
+
+  #checkbox_menu:checked + label .menu_list{
+    margin-left: -16px;
+    transition: all 1s ease-out;
+  }
+
+  #checkbox_menu {
+    margin-left: 0;
+  }
+
+  .burger_row {
+    width: 38px;
+    height: 0;
+    border: 1px solid #717171;
+  }
+  /* Header styles end */
+  /* Welcome styles start */
+  .welcome {
+    height: 370px;
+  }
+  
+  .welcome_container {
+    width: 300px;
+    height: 252px;
+    margin-top: 0;
+  }
+  
+  .leaves_image {
+    display: none;
+  }
+  
+  .welcome_info {
+    width: 300px;
+  }
+  
+  .welcome_text {
+    width: 280px;
+  }
+  
+  .section_text {
+    margin-top: 20px;
+  }
+  
+  .button {
+    width: 100px;
+    height: 34px;
+    margin-top: 10px;
+    font-size: 10px;
+  }
+  /* Welcome styles end */
+  /* About styles start */
+  .about {
+    height: 600px;
+  }
+
+  .about_container {
+    width: 300px;
+    height: 500px;
+  }
+
+  .about_info {
+    width: 300px;
+    height: 308px;
+  }
+
+  .text_block {
+    width: 280px;
+    height: 330px;
+    margin-top: -1px;
+  }
+
+  .h2_green {
+    width: 300px;
+    font-size: 25px;
+    line-height: 33px;
+  }
+
+  .about_text {
+    width: 300px;
+    margin-top: 13px;
+    margin-left: -1px;
+    font-size: 15px;
+    line-height: 25px;
+    letter-spacing: 0.01em;
+  }
+
+  .houseplant_1 {
+    width: 300px;
+    height: 147px;
+    margin-top: 40px;
+    background: url(./assets/images/houseplant_mobile.png) no-repeat;
+    background-position: center bottom;
+  }
+  /* About styles end */
+}
