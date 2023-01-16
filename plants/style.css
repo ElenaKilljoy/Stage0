@@ -1,5 +1,6 @@
 html {
   scroll-behavior: smooth; 
+  overflow-x: hidden;
 }
 
 body {
@@ -25,12 +26,14 @@ body {
 }
 
 button {
+  background-color: rgba(224, 103, 46, 0);
   cursor: pointer;
 }
 
-button:hover {
+button:hover, button:focus {
   background: #E06733;
   color: #FFFFFF;
+  transition: 0.8s;
 }
 
 a {
@@ -107,6 +110,18 @@ a:hover {
   margin-top: 1px;
 }
 
+.burger {
+  display: none;
+}
+
+#checkbox_menu {
+  display: none;
+}
+
+.burger_close {
+  display: none;
+}
+
 .menu_list {
   list-style-type: none;
   display: flex;
@@ -126,7 +141,7 @@ a:hover {
   text-decoration: none;
 }
 
-.menu_item:hover {
+.menu_item:hover, .menu_item:focus {
   background: #E06733;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -175,7 +190,7 @@ a:hover {
 
 .welcome_text {
   width: 547px;
-  height: 340px;
+  height: 340px; 
   margin: 36px 3px 32px 0;
 }
 
@@ -293,6 +308,10 @@ h1 {
   font-size: 40px;
   line-height: 52px;
   color: #499A18;
+}
+
+.buttons {
+  display: flex;
 }
 
 .button_service {
@@ -436,6 +455,7 @@ h5 {
 .select:hover {
   background: #D6E7D2;
   box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+  transition: 0.8s;
 }
 
 .select_option {
@@ -540,6 +560,7 @@ h3 {
 
 .contact_form:hover {
   background: #C1E698;
+  transition: 0.8s;
 }
 
 .city {

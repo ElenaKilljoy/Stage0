@@ -7,6 +7,11 @@
   <title>Plants</title>
   <link href="normalize.css" rel="stylesheet" type="text/css">
   <link href="style.css" rel="stylesheet" type="text/css">
+  <link href="style_desktop-small.css" rel="stylesheet" type="text/css">
+  <link href="style_tablet.css" rel="stylesheet" type="text/css">
+  <link href="style_tablet-small.css" rel="stylesheet" type="text/css">
+  <link href="style_mobile.css" rel="stylesheet" type="text/css">
+  <link href="style_mobile-small.css" rel="stylesheet" type="text/css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
@@ -17,7 +22,7 @@
 </head>
 <body>
   <div class="body_wrapper">
-    <header class="header">
+    <header class="header" id="home">
       <div class="wrapper">
         <div class="header_container">
           <div class="navbar">
@@ -27,13 +32,23 @@
             </div>
             <div class="nav">
               <nav class="nav_menu">
-                <ul class="menu_list">
-                  <li><a href="#home" class="menu_item">Home</a></li>
-                  <li><a href="#about" class="menu_item">About us</a></li>
-                  <li><a href="#service" class="menu_item">Service</a></li>
-                  <li><a href="#price" class="menu_item">Price</a></li>
-                  <li><a href="#contacts" class="menu_item">Contacts</a></li>
-                </ul>
+                <input type="checkbox" id="checkbox_menu">
+                <label class="menu_button" for="checkbox_menu">
+                  <div class="burger">
+                    <div class="burger_row"></div>
+                    <div class="burger_row"></div>
+                    <div class="burger_row"></div>
+                    <div class="burger_row"></div>
+                  </div>
+                  <span class="burger_close">&#10006;</span>
+                  <ul class="menu_list">
+                    <li><a href="#home" class="menu_item">Home</a></li>
+                    <li><a href="#about" class="menu_item">About us</a></li>
+                    <li><a href="#service" class="menu_item">Service</a></li>
+                    <li><a href="#price" class="menu_item">Price</a></li>
+                    <li><a href="#contacts" class="menu_item">Contacts</a></li>
+                  </ul>
+                </label>
               </nav>
             </div>
           </div>
@@ -42,7 +57,7 @@
     </header>
 
     <main class="main">
-      <section class="welcome" id="home">
+      <section class="welcome">
         <div class="wrapper">
           <div class="welcome_container">
             <div class="leaves_image">
@@ -82,13 +97,15 @@
           <div class="service_container">
             <div class="service_buttons">
               <h2 class="h2_service">Service and our projects</h2>
-              <button class="button_service">Gardens</button>
-              <button class="button_service">Lawn</button>
-              <button class="button_service">Planting</button>
+              <div class="buttons">
+                <button class="button_service">Gardens</button>
+                <button class="button_service">Lawn</button>
+                <button class="button_service">Planting</button>
+              </div>
             </div>
             <div class="service_content">
               <div class="service_item">
-                <div class="service_image">
+                <div class="service_image one">
                   <img class="image_item" src="./assets/images/first_img.png" alt="garden_care">
                 </div>
                 <div class="service_text">
@@ -97,7 +114,7 @@
                 </div>
               </div>
               <div class="service_item">
-                <div class="service_image">
+                <div class="service_image two">
                   <img class="image_item" src="./assets/images/second_img.png" alt="planting">
                 </div>
                 <div class="service_text">
@@ -106,7 +123,7 @@
                 </div>
               </div>
               <div class="service_item">
-                <div class="service_image">
+                <div class="service_image three">
                   <img class="image_item" src="./assets/images/third_img.png" alt="lawn_care">
                 </div>
                 <div class="service_text">
@@ -115,7 +132,7 @@
                 </div>
               </div>
               <div class="service_item">
-                <div class="service_image">
+                <div class="service_image four">
                   <img class="image_item" src="./assets/images/fourth_img.png" alt="planting">
                 </div>
                 <div class="service_text">
@@ -124,7 +141,7 @@
                 </div>
               </div>
               <div class="service_item">
-                <div class="service_image">
+                <div class="service_image five">
                   <img class="image_item" src="./assets/images/fifth_img.png" alt="garden_care">
                 </div>
                 <div class="service_text">
@@ -133,7 +150,7 @@
                 </div>
               </div>
               <div class="service_item">
-                <div class="service_image">
+                <div class="service_image six">
                   <img class="image_item" src="./assets/images/sixth_img.png" alt="planting">
                 </div>
                 <div class="service_text">
@@ -152,15 +169,15 @@
             <div class="left_content">
               <h2 class="price">Prices</h2>
               <div class="select_items">
-                <div class="select">
+                <div class="select basics">
                   <p class="select_option">Basics</p>
                   <img class="accordion_btn" src="./assets/icons/accordion_btn.svg" alt="accordion_button">
                 </div>
-                <div class="select">
+                <div class="select standard">
                   <p class="select_option">Standard</p>
                   <img class="accordion_btn" src="./assets/icons/accordion_btn.svg" alt="accordion_button">
                 </div>
-                <div class="select">
+                <div class="select care">
                   <p class="select_option">Pro care</p>
                   <img class="accordion_btn" src="./assets/icons/accordion_btn.svg" alt="accordion_button">
                 </div>
