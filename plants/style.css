@@ -114,6 +114,14 @@ a:hover {
   display: none;
 }
 
+#checkbox_menu {
+  display: none;
+}
+
+.burger_close {
+  display: none;
+}
+
 .menu_list {
   list-style-type: none;
   display: flex;
