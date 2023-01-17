@@ -50,17 +50,17 @@
     justify-content: space-between;
   }
 
-  #checkbox_menu:checked + label .burger_close{
+  .show {
+    position: fixed;
     margin-left: 0;
+    margin-top: -6px;
+    font-size: 35px; 
   }
 
-  #checkbox_menu:checked + label .menu_list{
+  .menu_show {
+    position: fixed;
     margin-left: -16px;
     transition: all 1s ease-out;
-  }
-
-  #checkbox_menu {
-    margin-left: 0;
   }
 
   .burger_row {

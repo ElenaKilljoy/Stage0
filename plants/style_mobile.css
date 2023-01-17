@@ -40,28 +40,6 @@
     margin-top: 6px;
   }
 
-  #checkbox_menu {
-    position: fixed;
-    width: 38px;
-    height: 38px;
-    opacity: 0;
-    margin-left: 21px;
-    margin-top: -9px;
-  }
-
-  #checkbox_menu:checked + label .burger_close{
-    margin-left: 26px;
-  }
-
-  #checkbox_menu:checked + label .burger{
-    display: none;
-  }
-
-  #checkbox_menu:checked + label .menu_list{
-    margin-left: 8px;
-    transition: all 1s ease-out;
-  }
-
   .burger {
     position: absolute;
     width: 40px;
@@ -71,6 +49,18 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+  }
+
+  .open {
+    display: none;
+    position: absolute;
+  }
+
+  .show {
+    position: fixed;
+    margin-left: 26px;
+    margin-top: -6px;
+    font-size: 35px; 
   }
 
   .burger_row {
@@ -83,12 +73,9 @@
     position: fixed;
     display: flex;
     margin-left: 90px;
-    margin-top: -6px;
-    font-size: 35px; 
   }
 
   .menu_list {
-    position: fixed;
     width: 52px;
     display: flex;
     align-items: center;
@@ -96,6 +83,12 @@
     margin-left: 90px;
     background-color: #EDF2EC;
     padding: 0 11px 4px 9px;
+    transition: all 1s ease-out;
+  }
+
+  .menu_show {
+    position: fixed;
+    margin-left: 8px;
     transition: all 1s ease-out;
   }
 
