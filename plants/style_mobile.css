@@ -83,7 +83,7 @@
     margin-left: 90px;
     background-color: #EDF2EC;
     padding: 0 11px 4px 9px;
-    transition: all 1s ease-out;
+    transition: all 0.8s ease-out;
   }
 
   .menu_show {

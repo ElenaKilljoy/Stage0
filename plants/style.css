@@ -30,7 +30,7 @@ button {
   cursor: pointer;
 }
 
-button:hover, button:focus {
+button:hover {
   background: #E06733;
   color: #FFFFFF;
   transition: 0.8s;
@@ -111,10 +111,6 @@ a:hover {
 }
 
 .burger {
-  display: none;
-}
-
-#checkbox_menu {
   display: none;
 }
 
@@ -344,6 +340,7 @@ h1 {
   height: 450px;
   display: flex;
   flex-direction: column;
+  transition: all 0.8s ease-out;
 }
 
 .service_image {
@@ -355,6 +352,17 @@ h1 {
   margin: 0;
   border-radius: 21px 21px 0px 0px;
 }
+
+.blur {
+  filter: blur(5px);
+  transition: all 0.8s ease-out;
+}
+
+.active {
+  background: #E06733;
+  color: #FFFFFF;
+  transition: 0.8s;
+} 
 
 .service_text {
   width: 328px;
