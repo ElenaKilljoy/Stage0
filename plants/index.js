@@ -76,8 +76,12 @@ const serviceItems = document.querySelectorAll('.service_item');
 //select and unselect the button "Garden"
 let i = 0;
 const selectGarden = (select) => {
-  if (buttonPlanting.classList.contains('active') && buttonLawn.classList.contains('active')) {
-    buttonGarden.setAttribute('disabled', true);
+  if (buttonPlanting.classList.contains('active') && buttonGarden.classList.contains('active') === false) {
+    buttonLawn.setAttribute('disabled', true);
+    buttonGarden.classList.toggle('active');
+  } else if (buttonLawn.classList.contains('active') && buttonGarden.classList.contains('active') === false) {
+    buttonPlanting.setAttribute('disabled', true);
+    buttonGarden.classList.toggle('active');
   } else if (buttonGarden.classList.contains('active') && buttonPlanting.disabled === true) {
     buttonPlanting.removeAttribute('disabled');
     buttonGarden.classList.toggle('active');
@@ -118,8 +122,12 @@ const selectGarden = (select) => {
 //select and unselect the button "Lawn"
 let x = 0;
 const selectLawn = (select) => {
-  if (buttonPlanting.classList.contains('active') && buttonGarden.classList.contains('active')) {
-    buttonLawn.setAttribute('disabled', true);
+  if (buttonPlanting.classList.contains('active') && buttonLawn.classList.contains('active') === false) {
+    buttonGarden.setAttribute('disabled', true);
+    buttonLawn.classList.toggle('active');
+  } else if (buttonGarden.classList.contains('active') && buttonLawn.classList.contains('active') === false) {
+    buttonPlanting.setAttribute('disabled', true);
+    buttonLawn.classList.toggle('active');
   } else if (buttonLawn.classList.contains('active') && buttonGarden.disabled === true) {
     buttonGarden.removeAttribute('disabled');
     buttonLawn.classList.toggle('active');
@@ -160,8 +168,12 @@ const selectLawn = (select) => {
 //select and unselect the button "Planting"
 let y = 0;
 const selectPlanting = (select) => {
-  if (buttonLawn.classList.contains('active') && buttonGarden.classList.contains('active')) {
-    buttonPlanting.setAttribute('disabled', true);
+  if (buttonLawn.classList.contains('active') && buttonPlanting.classList.contains('active') === false) {
+    buttonGarden.setAttribute('disabled', true);
+    buttonPlanting.classList.toggle('active');
+  } else if (buttonGarden.classList.contains('active') && buttonPlanting.classList.contains('active') === false) {
+    buttonLawn.setAttribute('disabled', true);
+    buttonPlanting.classList.toggle('active');
   } else if (buttonPlanting.classList.contains('active') && buttonGarden.disabled === true) {
     buttonGarden.removeAttribute('disabled');
     buttonPlanting.classList.toggle('active');

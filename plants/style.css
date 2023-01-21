@@ -27,12 +27,12 @@ body {
 
 button {
   background-color: rgba(224, 103, 46, 0);
-  cursor: pointer;
 }
 
-button:hover {
+button:not([disabled]):hover {
   background: #E06733;
   color: #FFFFFF;
+  cursor: pointer;
   transition: 0.8s;
 }
 
