@@ -406,17 +406,17 @@ h5 {
 
 .prices_container {
   width: 1222px;
-  height: 405px;
+  height: 558px;
   display: flex;
   margin-top: 40px;
 }
 
 .left_content {
   width: 331px;
-  height: 389px;
+  height: 558px;
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
+  justify-content: flex-start;
 }
 
 .right_content {
@@ -437,6 +437,12 @@ h5 {
   align-items: center;
   border: 1px solid #E3E1D5;
   border-radius: 20px;
+  transition: 0.8s;
+}
+
+.one_opened {
+  height: 380px;
+  transition: 0.8s;
 }
 
 .price {
@@ -454,15 +460,61 @@ h5 {
   height: 50px;
   margin-top: 32px;
   display: flex;
-  align-items: center;
-  cursor: pointer;
+  flex-direction: column;
+  align-items: flex-start;
   border-radius: 20px;
   background: #EDF2EC;
+  transition: 0.8s;
+} 
+
+.select_title {
+  height: 40px;
+  margin-top: 6px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  transition: 0.8s;
 }
 
-.select:hover {
+.open_item {
+  width: 250px;
+  height: 154px;
+  margin-top: 32px;
+  display: flex;
+  align-items: flex-start;
+  cursor: pointer;
+  border-radius: 20px;
   background: #D6E7D2;
-  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+  transition: 0.8s;
+}
+
+.basics_close {
+  display: none;
+  transition: 0.8s;
+}
+
+.basics_open {
+  display: block;
+  transition: 0.8s;
+}
+
+.standard_close {
+  display: none;
+  transition: 0.8s;
+}
+
+.standard_open {
+  display: block;
+  transition: 0.8s;
+}
+
+.care_close {
+  display: none;
+  transition: 0.8s;
+}
+
+.care_open {
+  display: block;
   transition: 0.8s;
 }
 
@@ -475,15 +527,120 @@ h5 {
   font-size: 20px;
   line-height: 20px;
   color: #000000;
+  transition: 0.8s;
 }
 
-.accordion_btn {
-  margin-left: 63px;
+.accordion_btn1 {
+  width: 16px;
+  height: 16px;
+  margin-top: 0;
+  margin-left: 64px;
+  background: url(./assets/icons/accordion_btn.svg) no-repeat;
 }
 
-.accordion_btn:hover {
-  border-radius: 50%;
+.accordion_btn2 {
+  width: 16px;
+  height: 16px;
+  margin-top: 0;
+  margin-left: 64px;
+  background: url(./assets/icons/accordion_btn.svg) no-repeat;
+}
+
+.accordion_btn3 {
+  width: 16px;
+  height: 16px;
+  margin-top: 0;
+  margin-left: 64px;
+  background: url(./assets/icons/accordion_btn.svg) no-repeat;
+}
+
+.accordion_open {
+  width: 16px;
+  height: 16px;
+  margin-top: 4px;
+  margin-left: 64px;
+  background: url(./assets/icons/accordion_btn_active.svg) no-repeat;
+}
+
+.select_border {
+  width: 170px;
+  margin-left: 40px;
+  margin-bottom: 4px;
+  border: 0.1px solid #AEA1A1;
+}
+
+.select_text {
+  width: 170px;
+  margin-top: 0;
+  margin-left: 40px;
+  margin-bottom: 5px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 10px;
+  line-height: 10px;
+  color: #717171;
+}
+
+.select_price {
+  margin-top: 0;
+  margin-left: 40px;
+  margin-bottom: 5px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  color: #E06733;
+}
+
+.dollar {
+  font-size: 12px;
+}
+
+.hour {
+  font-size: 12px;
+  font-weight: 400;
+  color: #000000;
+}
+
+.select_order {
+  width: 86px;
+  height: 25px;
+  margin-left: 40px;
+  margin-bottom: 12px;
+  background: #FFFFFF;
+  border: 0;
+  border-radius: 10px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+  color: #717171;
+  transition: 0.8s;
+}
+
+.select:not([disabled]):hover {
+  background: #D6E7D2;
   box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+  transition: 0.8s;
+  cursor: pointer;
+}
+
+.select:not([disabled]):hover .accordion_btn1{
+  background: url(./assets/icons/accordion_btn2.svg) no-repeat;
+  transition: all 0.9s ease-out;
+}
+
+.select:not([disabled]):hover .accordion_btn2{
+  background: url(./assets/icons/accordion_btn2.svg) no-repeat;
+  transition: all 0.9s ease-out;
+}
+
+.select:not([disabled]):hover .accordion_btn3{
+  background: url(./assets/icons/accordion_btn2.svg) no-repeat;
+  transition: all 0.9s ease-out;
 }
 
 h3 {
@@ -582,7 +739,7 @@ h3 {
   color: #717171;
 }
 
-.accordion_btn2 {
+.accordion_btn4 {
   margin-left: 337px;
 }
 /* Contacts styles end */

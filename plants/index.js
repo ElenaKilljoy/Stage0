@@ -215,3 +215,135 @@ buttonGarden.addEventListener('click', selectGarden);
 buttonLawn.addEventListener('click', selectLawn);
 buttonPlanting.addEventListener('click', selectPlanting);
 //SERVICE END
+
+//PRICE START
+const priceBasics = document.querySelector('.basics');
+const priceStandard = document.querySelector('.standard');
+const priceProCare = document.querySelector('.care');
+const openBasics = document.querySelector('.basics_close');
+const openStandard = document.querySelector('.standard_close');
+const openProCare = document.querySelector('.care_close');
+const borderItems = document.querySelector('.select_items');
+const accordionButton1 = document.querySelector('.accordion_btn1');
+const accordionButton2 = document.querySelector('.accordion_btn2');
+const accordionButton3 = document.querySelector('.accordion_btn3');
+
+//open-close price for Basics
+const selectBasics = (select) => {
+  if (priceBasics.classList.contains('open_item') === false && priceStandard.classList.contains('open_item') === false && priceProCare.classList.contains('open_item') === false) {
+    priceBasics.classList.toggle('open_item');
+    openBasics.classList.add('basics_open');
+    borderItems.classList.add('one_opened');
+    accordionButton1.classList.remove('accordion_btn1');
+    accordionButton1.classList.add('accordion_open');
+  } else if (priceBasics.classList.contains('open_item') === false && priceStandard.classList.contains('open_item')) {
+    priceBasics.classList.toggle('open_item');
+    openBasics.classList.add('basics_open');
+    borderItems.classList.add('one_opened');
+    accordionButton1.classList.remove('accordion_btn1');
+    accordionButton1.classList.add('accordion_open');
+
+    openStandard.classList.remove('standard_open');
+    priceStandard.classList.remove('open_item');
+    accordionButton2.classList.remove('accordion_open');
+    accordionButton2.classList.add('accordion_btn2');
+  } else if (priceBasics.classList.contains('open_item') === false && priceProCare.classList.contains('open_item')) {
+    priceBasics.classList.toggle('open_item');
+    openBasics.classList.add('basics_open');
+    borderItems.classList.add('one_opened');
+    accordionButton1.classList.remove('accordion_btn1');
+    accordionButton1.classList.add('accordion_open');
+
+    openProCare.classList.remove('care_open');
+    priceProCare.classList.remove('open_item');
+    accordionButton3.classList.remove('accordion_open');
+    accordionButton3.classList.add('accordion_btn3');
+  } else if (priceBasics.classList.contains('open_item') && select.target.classList.contains('accordion_open')) {
+    openBasics.classList.remove('basics_open');
+    priceBasics.classList.remove('open_item');
+    accordionButton1.classList.remove('accordion_open');
+    accordionButton1.classList.add('accordion_btn1');
+    borderItems.classList.remove('one_opened');
+  }
+}
+//open-close price for Standard
+const selectStandard = (select) => {
+  if (priceStandard.classList.contains('open_item') === false && priceBasics.classList.contains('open_item')) {
+    priceStandard.classList.toggle('open_item');
+    openStandard.classList.add('standard_open');
+    borderItems.classList.add('one_opened');
+    accordionButton2.classList.remove('accordion_btn2');
+    accordionButton2.classList.add('accordion_open');
+
+    openBasics.classList.remove('basics_open');
+    priceBasics.classList.remove('open_item');
+    accordionButton1.classList.remove('accordion_open');
+    accordionButton1.classList.add('accordion_btn1');
+  } else if (priceStandard.classList.contains('open_item') === false && priceProCare.classList.contains('open_item')) {
+    priceStandard.classList.toggle('open_item');
+    openStandard.classList.add('standard_open');
+    borderItems.classList.add('one_opened');
+    accordionButton2.classList.remove('accordion_btn2');
+    accordionButton2.classList.add('accordion_open');
+
+    openProCare.classList.remove('care_open');
+    priceProCare.classList.remove('open_item');
+    accordionButton3.classList.remove('accordion_open');
+    accordionButton3.classList.add('accordion_btn3');
+  } else if (priceStandard.classList.contains('open_item') === false && priceProCare.classList.contains('open_item') === false && priceBasics.classList.contains('open_item') === false) {
+    priceStandard.classList.toggle('open_item');
+    openStandard.classList.add('standard_open');
+    borderItems.classList.add('one_opened');
+    accordionButton2.classList.remove('accordion_btn2');
+    accordionButton2.classList.add('accordion_open');
+  } else if (priceStandard.classList.contains('open_item') && select.target.classList.contains('accordion_open')) {
+    openStandard.classList.remove('standard_open');
+    priceStandard.classList.remove('open_item');
+    accordionButton2.classList.remove('accordion_open');
+    accordionButton2.classList.add('accordion_btn2');
+    borderItems.classList.remove('one_opened');
+  }
+}
+
+//open-close price for Pro Care
+const selectProCare = (select) => {
+  if (priceProCare.classList.contains('open_item') === false && priceBasics.classList.contains('open_item') === false && priceStandard.classList.contains('open_item') === false) {
+    priceProCare.classList.toggle('open_item');
+    openProCare.classList.add('care_open');
+    borderItems.classList.add('one_opened');
+    accordionButton3.classList.remove('accordion_btn3');
+    accordionButton3.classList.add('accordion_open');
+  } else if (priceProCare.classList.contains('open_item') === false && priceBasics.classList.contains('open_item')) {
+    priceProCare.classList.toggle('open_item');
+    openProCare.classList.add('care_open');
+    borderItems.classList.add('one_opened');
+    accordionButton3.classList.remove('accordion_btn3');
+    accordionButton3.classList.add('accordion_open');
+
+    openBasics.classList.remove('basics_open');
+    priceBasics.classList.remove('open_item');
+    accordionButton1.classList.remove('accordion_open');
+    accordionButton1.classList.add('accordion_btn1');
+  } else if (priceProCare.classList.contains('open_item') === false && priceStandard.classList.contains('open_item')) {
+    priceProCare.classList.toggle('open_item');
+    openProCare.classList.add('care_open');
+    borderItems.classList.add('one_opened');
+    accordionButton3.classList.remove('accordion_btn3');
+    accordionButton3.classList.add('accordion_open');
+
+    openStandard.classList.remove('standard_open');
+    priceStandard.classList.remove('open_item');
+    accordionButton2.classList.remove('accordion_open');
+    accordionButton2.classList.add('accordion_btn2');
+  } else if (priceProCare.classList.contains('open_item') && select.target.classList.contains('accordion_open')) {
+    openProCare.classList.remove('care_open');
+    priceProCare.classList.remove('open_item');
+    accordionButton3.classList.remove('accordion_open');
+    accordionButton3.classList.add('accordion_btn3');
+    borderItems.classList.remove('one_opened');
+  }
+}
+priceBasics.addEventListener('click', selectBasics);
+priceStandard.addEventListener('click', selectStandard);
+priceProCare.addEventListener('click', selectProCare);
+//PRICE END
