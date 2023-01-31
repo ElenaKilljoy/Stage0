@@ -347,3 +347,100 @@ priceBasics.addEventListener('click', selectBasics);
 priceStandard.addEventListener('click', selectStandard);
 priceProCare.addEventListener('click', selectProCare);
 //PRICE END
+
+//CONTACT START
+const selectCityForm = document.querySelector('.contact_title');
+const openedSelectForm = document.querySelector('.contact_close');
+const accordionButton4 = document.querySelector('.accordion_btn4');
+const cityName = document.querySelector('.city');
+
+//open-close form to select city
+const openForm = (open) => {
+  if(selectCityForm.classList.contains('form_opened') === false && openedSelectForm.classList.contains('contact_open') === false && cityName.classList.contains('selected_city') === false) {
+    selectCityForm.classList.add('form_opened');
+    openedSelectForm.classList.add('contact_open');
+    accordionButton4.classList.remove('accordion_btn4');
+    accordionButton4.classList.add('accordion4_open');
+  } else if(selectCityForm.classList.contains('form_opened') && cityName.classList.contains('selected_city') === false) {
+    selectCityForm.classList.remove('form_opened');
+    openedSelectForm.classList.remove('contact_open');
+    accordionButton4.classList.remove('accordion4_open');
+    accordionButton4.classList.add('accordion_btn4');
+  } else if (selectCityForm.classList.contains('form_opened') && cityName.classList.contains('selected_city') && openedSelectForm.classList.contains('contact_open') === false) {
+    openedSelectForm.classList.add('contact_open');
+    accordionButton4.classList.remove('accordion_selected');
+    accordionButton4.classList.add('accordion4_open');
+  } else if (selectCityForm.classList.contains('form_opened') && cityName.classList.contains('selected_city') && openedSelectForm.classList.contains('contact_open')) {
+    openedSelectForm.classList.remove('contact_open');
+    accordionButton4.classList.add('accordion_selected');
+  }
+}
+selectCityForm.addEventListener('click', openForm);
+
+const canCitySelect = document.querySelector('.can_city');
+const nyCitySelect = document.querySelector('.ny_city');
+const yonkCitySelect = document.querySelector('.yonk_city');
+const sherCitySelect = document.querySelector('.sher_city');
+const officeInfo = document.querySelector('.contact_address');
+const city = document.querySelector('.city_name');
+const phone = document.querySelector('.tel');
+const address = document.querySelector('.address');
+const callButton = document.querySelector('.call_us');
+
+//click on city 'Canandaigua'
+const selectCity1 = (select) => {
+  cityName.innerHTML = 'Canandaigua, NY';
+  cityName.classList.add('selected_city');
+  openedSelectForm.classList.remove('contact_open');
+  accordionButton4.classList.add('accordion_selected');
+  officeInfo.classList.add('contact_show');
+  city.innerHTML = 'Canandaigua, NY';
+  phone.innerHTML = '+1 585 393 0001';
+  address.innerHTML = '151 Charlotte Street';
+  callButton.setAttribute('onclick', "window.location.href ='tel:+15853930001';");
+}
+
+//click on city 'New York'
+const selectCity2 = (select) => {
+  cityName.innerHTML = 'New York City';
+  cityName.classList.add('selected_city');
+  openedSelectForm.classList.remove('contact_open');
+  accordionButton4.classList.add('accordion_selected');
+  officeInfo.classList.add('contact_show');
+  city.innerHTML = 'New York City';
+  phone.innerHTML = '+1 212 456 0002';
+  address.innerHTML = '9 East 91st Street';
+  callButton.setAttribute('onclick', "window.location.href ='tel:+12124560002';");
+}
+
+//click on city 'Yonkers'
+const selectCity3 = (select) => {
+  cityName.innerHTML = 'Yonkers, NY';
+  cityName.classList.add('selected_city');
+  openedSelectForm.classList.remove('contact_open');
+  accordionButton4.classList.add('accordion_selected');
+  officeInfo.classList.add('contact_show');
+  city.innerHTML = 'Yonkers, NY';
+  phone.innerHTML = '+1 914 678 0003';
+  address.innerHTML = '511 Warburton Ave';
+  callButton.setAttribute('onclick', "window.location.href ='tel:+19146780003';");
+}
+
+//click on city 'Sherrill'
+const selectCity4 = (select) => {
+  cityName.innerHTML = 'Sherrill, NY';
+  cityName.classList.add('selected_city');
+  openedSelectForm.classList.remove('contact_open');
+  accordionButton4.classList.add('accordion_selected');
+  officeInfo.classList.add('contact_show');
+  city.innerHTML = 'Sherrill, NY';
+  phone.innerHTML = '+1 315 908 0004';
+  address.innerHTML = '14 WEST Noyes BLVD';
+  callButton.setAttribute('onclick', "window.location.href ='tel:+13159080004';");
+}
+
+canCitySelect.addEventListener('click', selectCity1);
+nyCitySelect.addEventListener('click', selectCity2);
+yonkCitySelect.addEventListener('click', selectCity3);
+sherCitySelect.addEventListener('click', selectCity4);
+//CONTACT END
