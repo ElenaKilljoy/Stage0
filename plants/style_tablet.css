@@ -226,12 +226,12 @@
 
   .prices_container {
     width: 668px;
-    height: 457px;
+    height: 500px;
   }
 
   .left_content {
     width: 332px;
-    height: 457px;
+    height: 500px;
     justify-content: flex-start;
   }
 
@@ -245,6 +245,11 @@
     width: 332px;
     height: 280px;
     margin-top: -4px;
+  }
+
+  .one_opened {
+    height: 390px;
+    transition: 0.8s;
   }
 
   .price {
@@ -289,9 +294,19 @@
     align-items: center;
   }
 
+  .contact_form_select {
+    height: 316px;
+    margin: 0 0 0 0;
+    justify-content: flex-start;
+  }
+
+  .contact_address {
+    margin-top: 46px;
+  }
+
   .contact_woman {
     width: 668px;
-    height: 400px;
+    height: 260px;
     order: 2;
     background: url(./assets/images/contact_woman_tablet.png) no-repeat;
     background-position: left 244px bottom 0;

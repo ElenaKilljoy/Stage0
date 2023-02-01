@@ -83,7 +83,7 @@
     margin-left: 90px;
     background-color: #EDF2EC;
     padding: 0 11px 4px 9px;
-    transition: all 1s ease-out;
+    transition: all 0.8s ease-out;
   }
 
   .menu_show {
@@ -242,13 +242,13 @@
   /* Service styles end */
   /* Prices styles start */
   .prices {
-    height: 512px;
+    height: auto;
     justify-content: center;
   }
 
   .prices_container {
     width: 330px;
-    height: 512px;
+    height: auto;
     margin: 0;
     flex-direction: column;
     align-items: center;
@@ -257,14 +257,14 @@
 
   .left_content {
     width: 230px;
-    height: 346px;
+    height: auto;
     justify-content: flex-start;
     margin-top: 25px;
   }
 
   .right_content {
     width: 230px;
-    height: 178px;
+    height: auto;
     justify-content: flex-start;
     align-items: center;
   }
@@ -301,8 +301,29 @@
     line-height: 20px;
   }
 
+  .one_opened {
+    height: 340px;
+    transition: 0.8s;
+  }
+
   .accordion_btn {
-    margin-left: 5px;
+    margin-left: 15px;
+  }
+
+  .accordion_btn1 {
+    margin-left: 15px;
+  }
+
+  .accordion_btn2 {
+    margin-left: 15px;
+  }
+
+  .accordion_btn3 {
+    margin-left: 15px;
+  }
+
+  .accordion_open {
+    margin-left: 15px;
   }
 
   h3 {
@@ -355,8 +376,8 @@
     margin: 0 4px 50px 0;
   }
 
-  .accordion_btn2 {
-    margin-left: 202px;
+  .accordion_btn4 {
+    margin-left: 100px;
   }
   /* Contacts styles end */
   /* Main styles end */

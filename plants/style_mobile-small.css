@@ -147,4 +147,56 @@
     background-position: center bottom;
   }
   /* About styles end */
+  /* Service styles start */
+  .service_container {
+    width: 300px;
+  }
+
+  .service_buttons {
+    width: 300px;
+  }
+  /* Service styles end */
+  /* Prices styles start */
+  .prices_container {
+    width: 300px;
+  }
+  /* Prices styles end */
+  /* Contacts styles start */
+  .contacts {
+    height: 445px;
+    justify-content: center;
+  }
+
+  .contacts_container {
+    width: 300px;
+    align-items: center;
+  }
+
+  .contact_us {
+    width: 300px;
+  }
+
+  .contact_form {
+    width: 300px;
+  }
+
+  .accordion_btn4 {
+    margin-left: 90px;
+  }
+
+  /* Contacts styles end */
+  /* Main styles end */
+  /* Footer styles start */
+  .footer_container {
+    width: 300px;
+  }
+
+  .footer_data {
+    width: 300px;
+  }
+
+  .rs_school {
+    width: 300px;
+  }
+  /* Footer styles end */
 }
