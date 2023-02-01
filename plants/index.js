@@ -264,6 +264,18 @@ const selectBasics = (select) => {
     accordionButton1.classList.remove('accordion_open');
     accordionButton1.classList.add('accordion_btn1');
     borderItems.classList.remove('one_opened');
+  } else if (priceBasics.classList.contains('open_item') && select.target.classList.contains('select_option')) {
+    openBasics.classList.remove('basics_open');
+    priceBasics.classList.remove('open_item');
+    accordionButton1.classList.remove('accordion_open');
+    accordionButton1.classList.add('accordion_btn1');
+    borderItems.classList.remove('one_opened');
+  } else if (priceBasics.classList.contains('open_item') && select.target.classList.contains('select_title')) {
+    openBasics.classList.remove('basics_open');
+    priceBasics.classList.remove('open_item');
+    accordionButton1.classList.remove('accordion_open');
+    accordionButton1.classList.add('accordion_btn1');
+    borderItems.classList.remove('one_opened');
   }
 }
 //open-close price for Standard
@@ -297,6 +309,18 @@ const selectStandard = (select) => {
     accordionButton2.classList.remove('accordion_btn2');
     accordionButton2.classList.add('accordion_open');
   } else if (priceStandard.classList.contains('open_item') && select.target.classList.contains('accordion_open')) {
+    openStandard.classList.remove('standard_open');
+    priceStandard.classList.remove('open_item');
+    accordionButton2.classList.remove('accordion_open');
+    accordionButton2.classList.add('accordion_btn2');
+    borderItems.classList.remove('one_opened');
+  } else if (priceStandard.classList.contains('open_item') && select.target.classList.contains('select_title')) {
+    openStandard.classList.remove('standard_open');
+    priceStandard.classList.remove('open_item');
+    accordionButton2.classList.remove('accordion_open');
+    accordionButton2.classList.add('accordion_btn2');
+    borderItems.classList.remove('one_opened');
+  } else if (priceStandard.classList.contains('open_item') && select.target.classList.contains('select_option')) {
     openStandard.classList.remove('standard_open');
     priceStandard.classList.remove('open_item');
     accordionButton2.classList.remove('accordion_open');
@@ -336,6 +360,18 @@ const selectProCare = (select) => {
     accordionButton2.classList.remove('accordion_open');
     accordionButton2.classList.add('accordion_btn2');
   } else if (priceProCare.classList.contains('open_item') && select.target.classList.contains('accordion_open')) {
+    openProCare.classList.remove('care_open');
+    priceProCare.classList.remove('open_item');
+    accordionButton3.classList.remove('accordion_open');
+    accordionButton3.classList.add('accordion_btn3');
+    borderItems.classList.remove('one_opened');
+  } else if (priceProCare.classList.contains('open_item') && select.target.classList.contains('select_option')) {
+    openProCare.classList.remove('care_open');
+    priceProCare.classList.remove('open_item');
+    accordionButton3.classList.remove('accordion_open');
+    accordionButton3.classList.add('accordion_btn3');
+    borderItems.classList.remove('one_opened');
+  } else if (priceProCare.classList.contains('open_item') && select.target.classList.contains('select_title')) {
     openProCare.classList.remove('care_open');
     priceProCare.classList.remove('open_item');
     accordionButton3.classList.remove('accordion_open');

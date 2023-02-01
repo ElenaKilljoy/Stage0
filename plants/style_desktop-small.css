@@ -226,12 +226,12 @@
 
   .prices_container {
     width: 668px;
-    height: 457px;
+    height: 500px;
   }
 
   .left_content {
     width: 332px;
-    height: 457px;
+    height: 500px;
     justify-content: flex-start;
   }
 
@@ -255,6 +255,11 @@
 
   .select {
     margin-top: 33px;
+  }
+
+  .one_opened {
+    height: 390px;
+    transition: 0.8s;
   }
 
   h3 {
@@ -287,6 +292,10 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+  }
+
+  .contact_form_select {
+    margin: 40px 0 0 0;
   }
 
   .contact_woman {
