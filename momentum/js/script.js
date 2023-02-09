@@ -1,11 +1,13 @@
 const time = document.querySelector('.time');
 const dateToday = document.querySelector('.date');
+const greeting = document.querySelector('.greeting');
 
 function showTime() {
   const date = new Date();
   const currentTime = date.toLocaleTimeString();
- time.textContent = currentTime;
- setTimeout(showTime, 1000);
+  time.textContent = currentTime;
+  getTimeOfDay();
+  setTimeout(showTime, 1000);
 }
 showTime();
 
@@ -18,3 +20,23 @@ function showDate() {
 }
 showDate();
 
+
+function getTimeOfDay() {
+  const date = new Date();
+  const hours = date.getHours();
+  if (hours >= 0 && hours < 6) {
+    return 'night';
+  }
+  if (hours >= 6 && hours < 12) {
+    return 'morning';
+  }
+  if (hours >= 12 && hours < 18) {
+    return 'afternoon';
+  }
+  if (hours >= 18 && hours < 24) {
+    return 'evening';
+  }
+}
+const timeOfDay = getTimeOfDay();
+const greetingText = `Good ${timeOfDay}!`;
+greeting.textContent = greetingText;
