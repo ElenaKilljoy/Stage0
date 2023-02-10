@@ -1,6 +1,7 @@
 const time = document.querySelector('.time');
 const dateToday = document.querySelector('.date');
 const greeting = document.querySelector('.greeting');
+const inputUserName = document.querySelector('.name');
 
 function showTime() {
   const date = new Date();
@@ -40,3 +41,17 @@ function getTimeOfDay() {
 const timeOfDay = getTimeOfDay();
 const greetingText = `Good ${timeOfDay}!`;
 greeting.textContent = greetingText;
+
+//save the user name
+function setLocalStorage() {
+  localStorage.setItem('name', inputUserName.value);
+}
+window.addEventListener('beforeunload', setLocalStorage);
+
+//get the user name
+function getLocalStorage() {
+  if (localStorage.getItem('name')) {
+    inputUserName.value = localStorage.getItem('name');
+  }
+}
+window.addEventListener('load', getLocalStorage);
