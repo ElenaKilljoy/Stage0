@@ -7,6 +7,8 @@ let randomNumber;
 const slideNext = document.querySelector('.slide-next');
 const slidePrev = document.querySelector('.slide-prev');
 
+//CLOCK & DATE START
+//add current time
 function showTime() {
   const date = new Date();
   const currentTime = date.toLocaleTimeString();
@@ -15,14 +17,16 @@ function showTime() {
 }
 showTime();
 
+//add current date
 function showDate() {
   const date = new Date();
-  const options = {weekday: 'long', month: 'long', day: 'numeric', year: 'numeric'};
+  const options = {weekday: 'long', month: 'long', day: 'numeric'};
   const currentDate = date.toLocaleDateString('en-RU', options);
   dateToday.textContent = currentDate;
   setTimeout(showDate, 1000);
 }
 showDate();
+//CLOCK & DATE END
 
 //GREETING START
 //get time of day
