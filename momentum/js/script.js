@@ -7,7 +7,6 @@ function showTime() {
   const date = new Date();
   const currentTime = date.toLocaleTimeString();
   time.textContent = currentTime;
-  getTimeOfDay();
   setTimeout(showTime, 1000);
 }
 showTime();
@@ -21,7 +20,8 @@ function showDate() {
 }
 showDate();
 
-
+//GREETING START
+//get time of day
 function getTimeOfDay() {
   const date = new Date();
   const hours = date.getHours();
@@ -38,9 +38,15 @@ function getTimeOfDay() {
     return 'evening';
   }
 }
-const timeOfDay = getTimeOfDay();
-const greetingText = `Good ${timeOfDay}!`;
-greeting.textContent = greetingText;
+
+//print greeting
+function printGreeting() {
+  const timeOfDay = getTimeOfDay();
+  const greetingText = `Good ${timeOfDay},`;
+  greeting.textContent = greetingText;
+  setTimeout(printGreeting, 1000);
+}
+printGreeting()
 
 //save the user name
 function setLocalStorage() {
@@ -55,3 +61,4 @@ function getLocalStorage() {
   }
 }
 window.addEventListener('load', getLocalStorage);
+//GREETING END
