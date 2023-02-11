@@ -2,6 +2,10 @@ const time = document.querySelector('.time');
 const dateToday = document.querySelector('.date');
 const greeting = document.querySelector('.greeting');
 const inputUserName = document.querySelector('.name');
+const body = document.querySelector('.body');
+let randomNumber;
+const slideNext = document.querySelector('.slide-next');
+const slidePrev = document.querySelector('.slide-prev');
 
 function showTime() {
   const date = new Date();
@@ -62,3 +66,49 @@ function getLocalStorage() {
 }
 window.addEventListener('load', getLocalStorage);
 //GREETING END
+
+//BACKGROUND SLIDER START
+//add background
+function getRandomNumber() {
+  const min = Math.ceil(1);
+  const max = Math.floor(20);
+  const number = Math.floor(Math.random() * (max - min + 1)) + min;
+  randomNumber = number.toString().padStart(2, '0');
+}
+getRandomNumber()
+
+function setBackground() {
+  const timeOfDay = getTimeOfDay();
+  const bgNumber = randomNumber;
+  const bgLink = `https://raw.githubusercontent.com/elenakilljoy/stage1-tasks/assets/images/${timeOfDay}/${bgNumber}.jpg`;
+  body.style.backgroundImage = `url(${bgLink})`;
+}
+setBackground()
+
+//slider ahead
+function getSlideNext() {
+  let toNumber = randomNumber * 1;
+  if (toNumber < 20) {
+    toNumber = toNumber + 1;
+  } else if (toNumber === 20) {
+    toNumber = 1;
+  }
+  randomNumber = toNumber.toString().padStart(2, '0');
+setBackground()
+}
+
+//slider back
+function getSlidePrev() {
+  let toNumber = randomNumber * 1;
+  if (toNumber > 1) {
+    toNumber = toNumber - 1;
+  } else if (toNumber === 1) {
+    toNumber = 20;
+  }
+  randomNumber = toNumber.toString().padStart(2, '0');
+setBackground()
+}
+
+slideNext.addEventListener('click', getSlideNext);
+slidePrev.addEventListener('click', getSlidePrev);
+//BACKGROUND SLIDER END
