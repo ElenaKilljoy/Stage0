@@ -85,7 +85,11 @@ function setBackground() {
   const timeOfDay = getTimeOfDay();
   const bgNumber = randomNumber;
   const bgLink = `https://raw.githubusercontent.com/elenakilljoy/stage1-tasks/assets/images/${timeOfDay}/${bgNumber}.jpg`;
-  body.style.backgroundImage = `url(${bgLink})`;
+  const image = new Image();
+  image.src = bgLink;
+  image.onload = () => {
+    body.style.backgroundImage = `url(${bgLink})`;
+  }
 }
 setBackground()
 
