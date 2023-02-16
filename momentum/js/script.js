@@ -6,6 +6,13 @@ const body = document.querySelector('.body');
 let randomNumber;
 const slideNext = document.querySelector('.slide-next');
 const slidePrev = document.querySelector('.slide-prev');
+const weatherIcon = document.querySelector('.weather-icon');
+const temperature = document.querySelector('.temperature');
+const weatherDescription = document.querySelector('.weather-description');
+const wind = document.querySelector('.wind');
+const humidity = document.querySelector('.humidity');
+const inputCity = document.querySelector('.city');
+const error = document.querySelector('.weather-error');
 
 //CLOCK & DATE START
 //add current time
@@ -120,3 +127,57 @@ setBackground()
 slideNext.addEventListener('click', getSlideNext);
 slidePrev.addEventListener('click', getSlidePrev);
 //BACKGROUND SLIDER END
+
+//WEATHER START
+//save the city
+function setCity() {
+  localStorage.setItem('city', inputCity.value);
+}
+window.addEventListener('beforeunload', setCity);
+
+//get the city
+function getCity() {
+  if (localStorage.getItem('city')) {
+    inputCity.value = localStorage.getItem('city');
+  }
+}
+window.addEventListener('load', getCity);
+
+if (localStorage.getItem('city')) {
+  inputCity.value = localStorage.getItem('city');
+} else {
+  inputCity.value = inputCity.value;
+}
+
+//get weather of the city
+async function getWeather() {  
+  const url = `https://api.openweathermap.org/data/2.5/weather?q=${inputCity.value}&lang=en&appid=fd5748f19f1d5d00659db9433c42970a&units=metric`;
+  const res = await fetch(url);
+  const data = await res.json();
+  weatherIcon.className = 'weather-icon owf';
+  if (data.cod === 200) {
+    weatherIcon.classList.add(`owf-${data.weather[0].id}`);
+    temperature.textContent = `${Math.floor(data.main.temp)}\u00B0C`;
+    weatherDescription.textContent = data.weather[0].description;
+    wind.textContent = `Wind speed: ${Math.floor(data.wind.speed)} m/s`;
+    humidity.textContent = `Humidity: ${data.main.humidity}\%`;
+    error.textContent = '';
+  } else {
+    if (inputCity.value.length === 0) {
+      error.textContent = 'Error! Enter city!';
+      weatherDescription.textContent = '';
+      wind.textContent = '';
+      temperature.textContent = '';
+      humidity.textContent = '';
+    } else {
+      error.textContent = `Error! '${inputCity.value}' not found!`;
+      weatherDescription.textContent = '';
+      wind.textContent = '';
+      temperature.textContent = '';
+      humidity.textContent = '';
+    }
+  }
+}
+getWeather()
+inputCity.addEventListener('change', getWeather);
+//WEATHER END
