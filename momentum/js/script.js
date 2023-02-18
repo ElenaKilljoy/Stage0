@@ -13,6 +13,10 @@ const wind = document.querySelector('.wind');
 const humidity = document.querySelector('.humidity');
 const inputCity = document.querySelector('.city');
 const error = document.querySelector('.weather-error');
+const quote = document.querySelector('.quote');
+const author = document.querySelector('.author');
+let randomQuote;
+const newQuote = document.querySelector('.change-quote');
 
 //CLOCK & DATE START
 //add current time
@@ -178,6 +182,34 @@ async function getWeather() {
     }
   }
 }
-getWeather()
+getWeather();
 inputCity.addEventListener('change', getWeather);
 //WEATHER END
+
+//QUOTE START
+//get a random quote
+function getNumberOfQuote() {
+  const min = Math.ceil(0);
+  const max = Math.floor(29);
+  const number = Math.floor(Math.random() * (max - min + 1)) + min;
+  randomQuote = number;
+}
+getNumberOfQuote();
+async function getQuote() {  
+  const quotes = 'js/quotes.json';
+  const res = await fetch(quotes);
+  const data = await res.json();
+  console.log(data);
+  let i = randomQuote;
+  quote.textContent = data[i].text;
+  author.textContent = data[i].author;
+}
+getQuote();
+
+//change the quote
+function changeQuote() {
+  getNumberOfQuote();
+  getQuote();
+}
+newQuote.addEventListener('click', changeQuote);
+//QUOTE END
