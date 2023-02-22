@@ -17,6 +17,10 @@ const quote = document.querySelector('.quote');
 const author = document.querySelector('.author');
 let randomQuote;
 const newQuote = document.querySelector('.change-quote');
+const listOfSongs = document.querySelector('.play-list');
+const playButton = document.querySelector('.play');
+const nextButton = document.querySelector('.play-next');
+const prevButton = document.querySelector('.play-prev');
 
 //CLOCK & DATE START
 //add current time
@@ -213,3 +217,73 @@ function changeQuote() {
 }
 newQuote.addEventListener('click', changeQuote);
 //QUOTE END
+
+//AUDIO START
+//set the playlist
+for(let i = 0; i < playList.length; i++) {
+  const li = document.createElement('li');
+  li.classList.add('play-item');
+  li.textContent = playList[i].title;
+  listOfSongs.append(li);
+}
+const listItem = document.querySelectorAll('.play-item');
+
+//function for playing audio
+const audio = new Audio();
+let x = 0;
+function playAudio() {
+  audio.src = playList[x].src;
+  audio.currentTime = 0;
+  audio.volume = 0.2;
+  audio.play();
+}
+
+//function to pause audio
+function pauseAudio() {
+  audio.pause();
+}
+
+//functionality for the play-button
+function toggleButton() {
+  if (playButton.classList.contains('pause') === false) {
+    listItem[x].classList.add('item-active');
+    playButton.classList.toggle('pause');
+    playAudio();
+  } else if (playButton.classList.contains('pause')) {
+    playButton.classList.toggle('pause');
+    pauseAudio();
+  }
+}
+playButton.addEventListener('click', toggleButton);
+
+//functionality for the play-next-button
+function playNext() {
+  listItem[x].classList.remove('item-active');
+  x++;
+  if (x === listItem.length) {
+    x = 0;
+  }
+  listItem[x].classList.add('item-active');
+  playAudio();
+  if (playButton.classList.contains('pause') === false) {
+    playButton.classList.toggle('pause');
+  }
+}
+nextButton.addEventListener('click', playNext);
+audio.addEventListener('ended', playNext);
+
+//functionality for the play-previous-button
+function playPrev() {
+  listItem[x].classList.remove('item-active');
+  x--;
+  if (x < 0) {
+    x = listItem.length - 1;
+  }
+  listItem[x].classList.add('item-active');
+  playAudio(x);
+  if (playButton.classList.contains('pause') === false) {
+    playButton.classList.toggle('pause');
+  }
+}
+prevButton.addEventListener('click', playPrev);
+//AUDIO END
