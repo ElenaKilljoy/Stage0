@@ -35,9 +35,48 @@ body {
 .player-controls {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  width: 120px;
-  margin-bottom: 28px;
+  width: 300px;
+  margin-bottom: 12px;
+}
+
+.player-icon {
+  margin-right: 5px;
+}
+
+.playing-progress {
+  display: flex;
+  flex-direction: column;
+  width: 150px; 
+  margin-left: 15px;
+}
+
+.playing-now {
+  margin-bottom: 5px;
+  margin-left: 2px;
+  text-align: left; 
+  font-size: 14px;
+  opacity: 0;
+}
+
+.visible {
+  opacity: 0.8;
+}
+
+.progress_bar {
+  height: 15px;
+  margin-bottom: 0;
+  border-radius: 2px;
+  background-color: #fff;
+  opacity: 0.6;
+ } 
+
+.progress {
+  width: 0%;
+  height: 15px;
+  border-radius: 2px;
+  background-color: #C5B358;
+  opacity: 0.8;
+  transition: .5s;
 }
 
 .play-list {

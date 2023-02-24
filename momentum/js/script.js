@@ -21,6 +21,8 @@ const listOfSongs = document.querySelector('.play-list');
 const playButton = document.querySelector('.play');
 const nextButton = document.querySelector('.play-next');
 const prevButton = document.querySelector('.play-prev');
+const nameOfPlaying = document.querySelector('.playing-now');
+const progressBar = document.querySelector('.progress');
 
 //CLOCK & DATE START
 //add current time
@@ -236,6 +238,12 @@ function playAudio() {
   audio.currentTime = 0;
   audio.volume = 0.2;
   audio.play();
+  nameOfPlaying.textContent = playList[x].title;
+  nameOfPlaying.classList.add('visible');
+  setInterval(() => {
+    progressBar.style.width = audio.currentTime / audio.duration * 100 + "%";
+    //audioPlayer.querySelector(".time .current").textContent = getTimeCodeFromNum(audio.currentTime);
+  }, 500);
 }
 
 //function to pause audio
