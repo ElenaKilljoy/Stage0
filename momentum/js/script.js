@@ -23,6 +23,10 @@ const nextButton = document.querySelector('.play-next');
 const prevButton = document.querySelector('.play-prev');
 const nameOfPlaying = document.querySelector('.playing-now');
 const progressBar = document.querySelector('.progress');
+const timing = document.querySelector('.timing');
+const audioCurrentTime = document.querySelector('.current-time-progress');
+const duration = document.querySelector('.duration');
+const timeline = document.querySelector('.progress-bar');
 
 //CLOCK & DATE START
 //add current time
@@ -239,11 +243,24 @@ function playAudio() {
   audio.volume = 0.2;
   audio.play();
   nameOfPlaying.textContent = playList[x].title;
-  nameOfPlaying.classList.add('visible');
+  timing.classList.add('visible');
+  duration.textContent = playList[x].duration;
   setInterval(() => {
     progressBar.style.width = audio.currentTime / audio.duration * 100 + "%";
-    //audioPlayer.querySelector(".time .current").textContent = getTimeCodeFromNum(audio.currentTime);
+    audioCurrentTime.textContent = getTime(audio.currentTime);
   }, 500);
+}
+
+//get current time of song
+function getTime(num) {
+  let seconds = parseInt(num);
+  let minutes = parseInt(seconds / 60);
+  seconds -= minutes * 60;
+  const hours = parseInt(minutes / 60);
+  minutes -= hours * 60;
+  if (hours === 0) return `${String(minutes).padStart(2, 0)}:${String(seconds % 60).padStart(2, 0)}`;
+  return `${String(hours).padStart(2, 0)}:${String(minutes).padStart(2, 0)}:${String(
+    seconds % 60).padStart(2, 0)}`;
 }
 
 //function to pause audio
@@ -294,4 +311,11 @@ function playPrev() {
   }
 }
 prevButton.addEventListener('click', playPrev);
+
+//skip the audio
+timeline.addEventListener("click", e => {
+  const timeLineWidth = window.getComputedStyle(timeline).width;
+  const timeToSeek = e.offsetX / parseInt(timeLineWidth) * audio.duration;
+  audio.currentTime = timeToSeek;
+}, false);
 //AUDIO END

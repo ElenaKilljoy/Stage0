@@ -33,10 +33,11 @@ body {
 }
 
 .player-controls {
+  width: 300px;
+  height: 64px;
+  margin-bottom: 10px;
   display: flex;
   align-items: center;
-  width: 300px;
-  margin-bottom: 12px;
 }
 
 .player-icon {
@@ -55,20 +56,17 @@ body {
   margin-left: 2px;
   text-align: left; 
   font-size: 14px;
-  opacity: 0;
-}
-
-.visible {
   opacity: 0.8;
 }
 
-.progress_bar {
+.progress-bar {
   height: 15px;
-  margin-bottom: 0;
+  margin-bottom: 5px;
   border-radius: 2px;
   background-color: #fff;
   opacity: 0.6;
- } 
+  cursor: pointer;
+} 
 
 .progress {
   width: 0%;
@@ -78,6 +76,17 @@ body {
   opacity: 0.8;
   transition: .5s;
 }
+
+.timing {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  opacity: 0;
+}
+
+.visible {
+  opacity: 0.8;
+} 
 
 .play-list {
   text-align: left;
