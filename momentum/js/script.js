@@ -1,3 +1,5 @@
+console.log('Моя оценка - 97 баллов');
+
 const time = document.querySelector('.time');
 const dateToday = document.querySelector('.date');
 const greeting = document.querySelector('.greeting');
